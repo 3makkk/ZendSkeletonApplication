@@ -13,7 +13,7 @@ $settings = array(
      *
      * Accepted is something else
      */
-    'default' => 'de',
+    'default' => 'en_US',
 
     /**
      * Supported locales
@@ -22,7 +22,7 @@ $settings = array(
      *
      * Accepted is something else
      */
-    'supported' => array('de', 'en'),
+    'supported' => array('de_DE', 'en_US'),
 
     /**
      * Strategies

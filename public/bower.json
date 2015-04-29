@@ -1,0 +1,23 @@
+{
+  "name": "Erstellbar Skeleton Anwendung",
+  "version": "0.1.0",
+  "homepage": "https://github.com/3makkk/ZendSkeletonApplication",
+  "authors": [
+    "Sven Friedemann <sven@erstellbar.de>"
+  ],
+  "description": "Erstellbar Skeleton Anwendung",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "emak-foundation-plugins": "3makkk/foundation-plugins",
+    "slick-carousel": "~1.5.2"
+  }
+}

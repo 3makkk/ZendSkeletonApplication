@@ -7,6 +7,7 @@
  */
 return array(
     'modules' => array(
+        'RouteTranslation',
         'Application',
         'SlmLocale',
         'Soflomo\\Mail',
