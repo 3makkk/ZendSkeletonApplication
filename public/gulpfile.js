@@ -3,6 +3,7 @@ var gulpFilter = require('gulp-filter');
 var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var mainBowerFiles = require('main-bower-files');
+var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
     gulp.src(['./sass/*.scss'])
@@ -15,6 +16,13 @@ gulp.task('sass', function () {
         }))
         .pipe(minifyCss())
         .pipe(gulp.dest('./css'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: "localhost:8080"
+    });
 });
 
 gulp.task('bower-files', function() {
@@ -25,8 +33,10 @@ gulp.task('bower-files', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./sass/*.scss', ['sass']);
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+    gulp.watch('../module/**/*.*').on('change', browserSync.reload);
 });
 
 
 
-gulp.task("default", ['sass', 'bower-files', 'watch']);
+gulp.task("default", ['sass', 'bower-files', 'watch', 'browser-sync']);
