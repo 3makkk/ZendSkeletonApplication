@@ -61,14 +61,15 @@ footer {
   margin-bottom: 2em;
 }
 
-#header-slider {
+.media {
   background-color: #3C3C3B;
+  text-align: center;
 }
 
 .content {
 
   min-height: 400px;
-  padding: 3em;
+  padding: 3em 0;
 
   * {
     color: #fff;
