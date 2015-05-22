@@ -10,8 +10,9 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "~2.4",
-        "soflomo/mail": "dev-master",
+        "soflomo/mail": "^0.3.2",
         "slm/locale": "dev-master",
-        "zendframework/zftool": "0.1.*"
+        "zendframework/zftool": "0.1.*",
+        "3makkk/mail-log": "dev-master"
     }
 }
