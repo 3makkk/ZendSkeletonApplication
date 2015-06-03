@@ -10,7 +10,7 @@ return array(
         'RouteTranslation',
         'Application',
         'SlmLocale',
-        'Soflomo\\Mail',
+        'AcMailer',
         'MailLog',
     ),
     'module_listener_options' => array(
